@@ -1,12 +1,12 @@
 # `gotoeasy-rmi`
 GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
 
-require `gotoeasy-core`
-require & thanks to `slf4j`
-require & thanks to `cglib`
+- require `gotoeasy-core`
+- require & thanks to `slf4j`
+- require & thanks to `cglib`
 
 ## 青松的姿势
-业务类，POJO方式专注实现业务，标注上注解就可以提供RMI功能
+- 业务类，POJO方式专注实现业务，标注上注解就可以提供RMI功能
 ```java
 @Rmi()
 public class Sample1HelloRmi {
@@ -20,7 +20,7 @@ public class Sample1HelloRmi {
 }
 ```
 
-服务器端，关心部署配置，配置完成就启动吧
+- 服务器端，关心部署配置，配置完成就启动吧
 ```java
 public class Sample1ServerMain {
 
@@ -33,7 +33,7 @@ public class Sample1ServerMain {
 }
 ```
 
-客户端，关心服务来源和业务类，直接拿来像本地对象一样去用就行了
+- 客户端，关心服务来源和业务类，直接拿来像本地对象一样去用就行了
 ```java
 public class Sample1ClientMain {
 
