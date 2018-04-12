@@ -1,4 +1,4 @@
-package top.gotoeasy.rmi.server;
+package top.gotoeasy.framework.rmi.server;
 
 /**
  * RMI远程Bean对象提供者接口

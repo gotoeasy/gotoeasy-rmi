@@ -1,10 +1,10 @@
-package top.gotoeasy.rmi.client;
+package top.gotoeasy.framework.rmi.client;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import net.sf.cglib.proxy.Enhancer;
-import top.gotoeasy.rmi.strategy.RemoteMethodNameStrategy;
+import top.gotoeasy.framework.rmi.strategy.RemoteMethodNameStrategy;
 
 /**
  * RMI客户端代理类

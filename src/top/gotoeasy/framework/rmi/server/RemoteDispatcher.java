@@ -1,4 +1,4 @@
-package top.gotoeasy.rmi.server;
+package top.gotoeasy.framework.rmi.server;
 
 import java.lang.reflect.Method;
 import java.rmi.RemoteException;
@@ -9,7 +9,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import top.gotoeasy.core.util.CmnClass;
+import top.gotoeasy.framework.core.util.CmnClass;
 
 /**
  * 远程服务

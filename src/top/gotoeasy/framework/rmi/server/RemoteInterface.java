@@ -1,4 +1,4 @@
-package top.gotoeasy.rmi.server;
+package top.gotoeasy.framework.rmi.server;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

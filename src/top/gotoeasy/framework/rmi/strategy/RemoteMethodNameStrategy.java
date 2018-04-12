@@ -1,8 +1,8 @@
-package top.gotoeasy.rmi.strategy;
+package top.gotoeasy.framework.rmi.strategy;
 
 import java.lang.reflect.Method;
 
-import top.gotoeasy.core.util.CmnMessageDigest;
+import top.gotoeasy.framework.core.util.CmnMessageDigest;
 
 /**
  * 远程方法标识名策略

@@ -1,4 +1,4 @@
-package top.gotoeasy.rmi.client;
+package top.gotoeasy.framework.rmi.client;
 
 import java.lang.reflect.Method;
 import java.rmi.Naming;
@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory;
 
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
-import top.gotoeasy.rmi.server.RemoteInterface;
-import top.gotoeasy.rmi.strategy.RemoteMethodNameStrategy;
+import top.gotoeasy.framework.rmi.server.RemoteInterface;
+import top.gotoeasy.framework.rmi.strategy.RemoteMethodNameStrategy;
 
 /**
  * RMI客户端拦截类

@@ -1,4 +1,4 @@
-package top.gotoeasy.rmi.server;
+package top.gotoeasy.framework.rmi.server;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -14,10 +14,10 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import top.gotoeasy.core.util.CmnClass;
-import top.gotoeasy.rmi.annotation.RemoteMethod;
-import top.gotoeasy.rmi.annotation.Rmi;
-import top.gotoeasy.rmi.strategy.RemoteMethodNameStrategy;
+import top.gotoeasy.framework.core.util.CmnClass;
+import top.gotoeasy.framework.rmi.annotation.RemoteMethod;
+import top.gotoeasy.framework.rmi.annotation.Rmi;
+import top.gotoeasy.framework.rmi.strategy.RemoteMethodNameStrategy;
 
 /**
  * RMI服务创建器
