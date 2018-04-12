@@ -1,7 +1,11 @@
-# gotoeasy-rmi
-`GotoEasy`系列的RMI封装模块，目的为简化RMI程序的开发。
+# `gotoeasy-rmi`
+GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
 
-# 青松的姿势
+require `gotoeasy-core`
+require & thanks to `slf4j`
+require & thanks to `cglib`
+
+## 青松的姿势
 业务类，POJO方式专注实现业务，标注上注解就可以提供RMI功能
 ```java
 @Rmi()
@@ -41,3 +45,20 @@ public class Sample1ClientMain {
 
 }
 ```
+
+
+## LICENSE
+
+    Copyright (c) 2018 青松(www.gotoeasy.top)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
