@@ -48,13 +48,13 @@ public class Sample1ClientMain {
 ## GotoEasy系列
 - `gotoeasy-core` http://github.com/gotoeasy/gotoeasy-core/
 - `gotoeasy-rmi` http://github.com/gotoeasy/gotoeasy-rmi/
-- 
-- 
-- 
+- TODO
+- TODO
+- TODO
 
 ## LICENSE
 
-    Copyright (c) 2018 青松(www.gotoeasy.top)
+    Copyright (c) 2018 ZhangMing (www.gotoeasy.top)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
