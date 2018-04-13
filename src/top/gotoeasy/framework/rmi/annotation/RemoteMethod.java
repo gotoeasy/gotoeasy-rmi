@@ -16,6 +16,9 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD})
 public @interface RemoteMethod {
 
-    /** 内容 */
-    public String value() default "";
+	/**
+	 * 内容
+	 * @return 内容
+	 */
+	public String value() default "";
 }

@@ -10,12 +10,13 @@ import java.rmi.RemoteException;
  */
 public interface RemoteInterface extends Remote {
 
-    /**
-     * 执行远程调用
-     * @param name 标识名
-     * @param args 远程调用参数
-     * @return 执行结果
-     */
-    public Object execute(String name, Object ... args) throws RemoteException;
+	/**
+	 * 执行远程调用
+	 * @param name 标识名
+	 * @param args 远程调用参数
+	 * @return 执行结果
+	 * @throws RemoteException 异常
+	 */
+	public Object execute(String name, Object ... args) throws RemoteException;
 
 }

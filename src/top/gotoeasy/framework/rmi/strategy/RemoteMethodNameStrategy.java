@@ -11,14 +11,15 @@ import top.gotoeasy.framework.core.util.CmnMessageDigest;
  */
 public interface RemoteMethodNameStrategy {
 
-    /**
-     * 远程方法标识名
-     * <p/>
-     * 默认MD5加密
-     * @param method 方法
-     * @return 远程方法标识名
-     */
-    public default String getName(Method method) {
-        return CmnMessageDigest.md5(method.toGenericString());
-    }
+	/**
+	 * 远程方法标识名
+	 * <p>
+	 * 默认MD5加密
+	 * </p>
+	 * @param method 方法
+	 * @return 远程方法标识名
+	 */
+	public default String getName(Method method) {
+		return CmnMessageDigest.md5(method.toGenericString());
+	}
 }

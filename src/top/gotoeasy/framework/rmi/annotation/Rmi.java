@@ -16,6 +16,9 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE})
 public @interface Rmi {
 
-    /** 内容 */
-    public String value() default "";
+	/**
+	 * 内容
+	 * @return 内容
+	 */
+	public String value() default "";
 }
