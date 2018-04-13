@@ -1,8 +1,8 @@
 # `gotoeasy-rmi`
 GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
 
-- require `gotoeasy-core` http://github.com/gotoeasy/gotoeasy-core/
-- require & thanks to `cglib` http://github.com/cglib/cglib
+- depend on `gotoeasy-core` http://github.com/gotoeasy/gotoeasy-core/
+- depend on & thanks to `cglib` http://github.com/cglib/cglib
 
 ## 青松的姿势
 - 业务类，POJO方式专注实现业务，标注上注解就可以提供RMI功能
