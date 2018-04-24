@@ -11,9 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import top.gotoeasy.framework.core.log.Log;
+import top.gotoeasy.framework.core.log.LoggerFactory;
 import top.gotoeasy.framework.core.util.CmnClass;
 import top.gotoeasy.framework.rmi.annotation.RemoteMethod;
 import top.gotoeasy.framework.rmi.annotation.Rmi;
@@ -26,7 +25,7 @@ import top.gotoeasy.framework.rmi.strategy.RemoteMethodNameStrategy;
  */
 public class RmiServerBuilder {
 
-	private static final Logger			log	= LoggerFactory.getLogger(RemoteDispatcher.class);
+	private static final Log			log	= LoggerFactory.getLogger(RemoteDispatcher.class);
 
 	private String						host;
 	private int							port;

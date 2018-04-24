@@ -6,9 +6,8 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import top.gotoeasy.framework.core.log.Log;
+import top.gotoeasy.framework.core.log.LoggerFactory;
 import top.gotoeasy.framework.core.util.CmnClass;
 
 /**
@@ -20,7 +19,7 @@ public class RemoteDispatcher extends UnicastRemoteObject implements RemoteInter
 
 	private static final long	serialVersionUID	= 1L;
 
-	private static final Logger	log					= LoggerFactory.getLogger(RemoteDispatcher.class);
+	private static final Log	log					= LoggerFactory.getLogger(RemoteDispatcher.class);
 
 	private Map<String, Object>	mapBean				= new HashMap<>();
 	private Map<String, Method>	mapMethod;

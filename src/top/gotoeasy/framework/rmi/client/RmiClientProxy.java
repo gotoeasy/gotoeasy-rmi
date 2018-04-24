@@ -3,7 +3,7 @@ package top.gotoeasy.framework.rmi.client;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import net.sf.cglib.proxy.Enhancer;
+import top.gotoeasy.framework.aop.EnhancerBuilder;
 import top.gotoeasy.framework.rmi.strategy.RemoteMethodNameStrategy;
 
 /**
@@ -82,10 +82,7 @@ public class RmiClientProxy {
 			}
 
 			// 增强
-			Enhancer enhancer = new Enhancer();
-			enhancer.setSuperclass(clas);
-			enhancer.setCallback(new ClientInterceptor(rmiUrl, strategy));
-			obj = enhancer.create(); // 返回目标类的增强子类
+			obj = EnhancerBuilder.get().setSuperclass(clas).matchAop(new AopAround(rmiUrl, strategy)).build();
 			mapProxy.put(key, obj); // 缓存代理对象
 		}
 

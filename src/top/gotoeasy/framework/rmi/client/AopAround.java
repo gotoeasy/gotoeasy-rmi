@@ -5,22 +5,18 @@ import java.rmi.Naming;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+import top.gotoeasy.framework.aop.SuperInvoker;
+import top.gotoeasy.framework.aop.annotation.Aop;
+import top.gotoeasy.framework.aop.annotation.Around;
+import top.gotoeasy.framework.core.log.Log;
+import top.gotoeasy.framework.core.log.LoggerFactory;
 import top.gotoeasy.framework.rmi.server.RemoteInterface;
 import top.gotoeasy.framework.rmi.strategy.RemoteMethodNameStrategy;
 
-/**
- * RMI客户端拦截类
- * @since 2018/03
- * @author 青松
- */
-public class ClientInterceptor implements MethodInterceptor {
+@Aop
+public class AopAround {
 
-	private static final Logger							log			= LoggerFactory.getLogger(ClientInterceptor.class);
+	private static final Log							log			= LoggerFactory.getLogger(AopAround.class);
 
 	private String										rmiUrl;
 	private RemoteMethodNameStrategy					strategy;
@@ -30,7 +26,7 @@ public class ClientInterceptor implements MethodInterceptor {
 	 * 构造器
 	 * @param rmiUrl RMI服务的URL（rmi://地址:端口/服务名）
 	 */
-	public ClientInterceptor(String rmiUrl) {
+	public AopAround(String rmiUrl) {
 		this.rmiUrl = rmiUrl;
 		this.strategy = new RemoteMethodNameStrategy() {
 		};
@@ -41,7 +37,7 @@ public class ClientInterceptor implements MethodInterceptor {
 	 * @param rmiUrl RMI服务的URL（rmi://地址:端口/服务名）
 	 * @param strategy 标识名策略
 	 */
-	public ClientInterceptor(String rmiUrl, RemoteMethodNameStrategy strategy) {
+	public AopAround(String rmiUrl, RemoteMethodNameStrategy strategy) {
 		this.rmiUrl = rmiUrl;
 		this.strategy = strategy;
 	}
@@ -56,13 +52,8 @@ public class ClientInterceptor implements MethodInterceptor {
 	 * @param args 远程调用参数
 	 * @param proxy 方法代理
 	 */
-	@Override
-	public Object intercept(Object target, Method method, Object[] args, MethodProxy proxy) throws Throwable {
-
-		if ( "#equals#getClass#hashCode#notify#notifyAll#toString#wait#".contains("#" + method.getName() + "#") ) {
-			// Object方法不做代理
-			return proxy.invokeSuper(target, args);
-		}
+	@Around
+	public Object around(Object target, Method method, SuperInvoker superInvoker, Object ... args) {
 
 		try {
 			log.debug("远程调用开始，方法：{}，参数：{}", method, args);
