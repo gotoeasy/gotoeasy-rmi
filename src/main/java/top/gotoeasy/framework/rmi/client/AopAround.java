@@ -5,8 +5,6 @@ import java.rmi.Naming;
 import java.util.HashMap;
 import java.util.Map;
 
-import top.gotoeasy.framework.aop.Enhance;
-import top.gotoeasy.framework.aop.SuperInvoker;
 import top.gotoeasy.framework.aop.annotation.Aop;
 import top.gotoeasy.framework.aop.annotation.Around;
 import top.gotoeasy.framework.core.log.Log;
@@ -51,13 +49,12 @@ public class AopAround {
      * 不做可否远程调用的检查（比如有无指定注解），便于服务端用非注解式发布
      * </p>
      * 
-     * @param enhance 对象
      * @param method 方法
      * @param args 远程调用参数
-     * @param proxy 方法代理
+     * @return 远程调用结果
      */
     @Around
-    public Object around(Enhance enhance, Method method, SuperInvoker superInvoker, Object ... args) {
+    public Object around(Method method, Object ... args) {
 
         try {
             log.debug("远程调用开始，方法：{}，参数：{}", method, args);
