@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/55f4ec73d57943fda3e7731cdbdd9ea7)](https://www.codacy.com/app/gotoeasy/gotoeasy-rmi?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gotoeasy/gotoeasy-rmi&amp;utm_campaign=Badge_Grade)
+
 # `gotoeasy-rmi`
 GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
 
