@@ -1,7 +1,9 @@
 # `gotoeasy-rmi`
 GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
 
-- Maven使用
+
+
+Maven使用
 ```xml
 <dependency>
     <groupId>top.gotoeasy</groupId>
@@ -9,7 +11,7 @@ GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
     <version>x.y.z</version>
 </dependency>
 ```
-- Gradle使用
+Gradle使用
 ```gradle
 compile group: 'top.gotoeasy', name: 'gotoeasy-rmi', version: 'x.y.z'
 ```
