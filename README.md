@@ -1,8 +1,21 @@
 # `gotoeasy-rmi`
 GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
 
-- depend on `gotoeasy-core` http://github.com/gotoeasy/gotoeasy-core/
-- depend on & thanks to `cglib` http://github.com/cglib/cglib
+- Maven使用
+```xml
+<dependency>
+    <groupId>top.gotoeasy</groupId>
+    <artifactId>gotoeasy-rmi</artifactId>
+    <version>x.y.z</version>
+</dependency>
+```
+- Gradle使用
+```gradle
+compile group: 'top.gotoeasy', name: 'gotoeasy-rmi', version: 'x.y.z'
+```
+
+
+- depend on `gotoeasy-aop` http://github.com/gotoeasy/gotoeasy-aop/
 
 ## 青松的姿势
 - 业务类，POJO方式专注实现业务，标注上注解就可以提供RMI功能
@@ -47,6 +60,7 @@ public class Sample1ClientMain {
 
 ## GotoEasy系列
 - `gotoeasy-core` http://github.com/gotoeasy/gotoeasy-core/
+- `gotoeasy-aop` http://github.com/gotoeasy/gotoeasy-aop/
 - `gotoeasy-rmi` http://github.com/gotoeasy/gotoeasy-rmi/
 - TODO
 - TODO
