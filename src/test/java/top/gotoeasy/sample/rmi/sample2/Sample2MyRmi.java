@@ -1,4 +1,4 @@
-package top.gotoeasy.framework.rmi.annotation;
+package top.gotoeasy.sample.rmi.sample2;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -7,18 +7,14 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * RMI远程对象声明类
+ * 自定义的RMI远程对象声明类例子
+ * 
  * @since 2018/03
  * @author 青松
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
-public @interface Rmi {
+public @interface Sample2MyRmi {
 
-	/**
-	 * 内容
-	 * @return 内容
-	 */
-	public String value() default "";
 }

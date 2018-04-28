@@ -7,18 +7,20 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * RMI远程方法声明类
+ * RMI远程对象声明类
+ * 
  * @since 2018/03
  * @author 青松
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD})
-public @interface RemoteMethod {
+@Target({ElementType.TYPE})
+public @interface Rmi {
 
-	/**
-	 * 内容
-	 * @return 内容
-	 */
-	public String value() default "";
+    /**
+     * 内容
+     * 
+     * @return 内容
+     */
+    public String value() default "";
 }
