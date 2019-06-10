@@ -1,6 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/55f4ec73d57943fda3e7731cdbdd9ea7)](https://www.codacy.com/app/gotoeasy/gotoeasy-rmi?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gotoeasy/gotoeasy-rmi&amp;utm_campaign=Badge_Grade)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/top.gotoeasy/gotoeasy-rmi/badge.svg)](https://maven-badges.herokuapp.com/maven-central/top.gotoeasy/gotoeasy-rmi)
 [![Javadocs](https://www.javadoc.io/badge/top.gotoeasy/gotoeasy-rmi.svg)](https://www.javadoc.io/doc/top.gotoeasy/gotoeasy-rmi)
+[![License](https://img.shields.io/badge/License-apache2.0-brightgreen.svg)](https://github.com/gotoeasy/gotoeasy-rmi/blob/master/LICENSE)
 
 # `gotoeasy-rmi`
 GotoEasy系列的RMI封装模块，目的为简化RMI程序的开发。
@@ -71,19 +72,3 @@ public class Sample1ClientMain {
 - TODO
 - TODO
 - TODO
-
-## LICENSE
-
-    Copyright (c) 2018 ZhangMing (www.gotoeasy.top)
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
